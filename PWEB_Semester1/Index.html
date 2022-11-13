@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="IndexStyle.css" />
+    <title>Booking Seat</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="topnav">
+        <h1>Welcome to DraCula Cinema!</h1><hr>
+      </div>
+    </header><br><br><br><br><br><br><br><br><br>
+    <div class="movie-container">
+      <label> Please choose your film -> </label>
+      <select id="movie">
+        <option value="41000">Avengers: Endgame (IDR 40.000 + IDR 1.000 administration)</option>
+        <option value="41000">Spiderman : No Way Home (IDR 40.000 + IDR 1.000 administration)</option>
+        <option value="41000">Jumanji (IDR 40.000 + IDR 1.000 administration)</option>
+        <option value="41000">The Lion King (IDR 40.000 + IDR 1.000 administration)</option>
+      </select>
+    </div>
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Reserved</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen">
+        <h1>Screen</h1>
+      </div>
+      <div class="row">
+        <div class="kursi">A</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat occupied" onClick="alert('Seat A3 is already reserved, please select other seat.')">3</div>
+        <div class="seat occupied" onClick="alert('Seat A4 is already reserved, please select other seat.')">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat occupied" onClick="alert('Seat A7 is already reserved, please select other seat.')">7</div>
+        <div class="seat occupied" onClick="alert('Seat A8 is already reserved, please select other seat.')">8</div>
+        <div class="seat occupied" onClick="alert('Seat A9 is already reserved, please select other seat.')">9</div>
+      </div>
+      <div class="row">
+        <div class="kursi">B</div>
+        <div class="seat occupied" onClick="alert('Seat B1 is already reserved, please select other seat.')">1</div>
+        <div class="seat occupied" onClick="alert('Seat B2 is already reserved, please select other seat.')">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat occupied" onClick="alert('Seat B5 is already reserved, please select other seat.')">5</div>
+        <div class="seat occupied" onClick="alert('Seat B6 is already reserved, please select other seat.')">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
+        <div class="seat">9</div>
+      </div>
+      <div class="row">
+        <div class="kursi">C</div>
+        <div class="seat occupied" onClick="alert('Seat C1 is already reserved, please select other seat.')">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat occupied" onClick="alert('Seat C4 sudah terisi. Silahkan pilih seat lainnya.')">4</div>
+        <div class="seat occupied" onClick="alert('Seat C5 sudah terisi. Silahkan pilih seat lainnya.')">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
+        <div class="seat occupied" onClick="alert('Seat C9 is already reserved, please select other seat.')">9</div>
+      </div>
+      <div class="row">
+        <div class="kursi">D</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat occupied" onClick="alert('Seat D7 is already reserved, please select other seat.')">7</div>
+        <div class="seat occupied" onClick="alert('Seat D8 is already reserved, please select other seat.')">8</div>
+        <div class="seat">9</div>
+      </div>
+      <div class="row">
+        <div class="kursi">E</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat occupied" onClick="alert('Seat E3 is already reserved, please select other seat.')">3</div>
+        <div class="seat occupied" onClick="alert('Seat E4 is already reserved, please select other seat.')">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
+        <div class="seat">9</div>
+      </div>
+      <div class="row">
+        <div class="kursi">F</div>
+        <div class="seat occupied" onClick="alert('Seat F1 is already reserved, please select other seat.')">1</div>
+        <div class="seat occupied" onClick="alert('Seat F2 is already reserved, please select other seat.')">2</div>
+        <div class="seat occupied" onClick="alert('Seat F3 is already reserved, please select other seat.')">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
+        <div class="seat">9</div>
+      </div>
+      <div class="row">
+        <div class="kursi">G</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat occupied" onClick="alert('Seat G3 is already reserved, please select other seat.')">3</div>
+        <div class="seat occupied" onClick="alert('Seat G4 is already reserved, please select other seat.')">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
+        <div class="seat">9</div>
+      </div>
+      <div class="row">
+        <div class="kursi">H</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat occupied" onClick="alert('Seat H6 is already reserved, please select other seat.')">6</div>
+        <div class="seat occupied" onClick="alert('Seat H7 is already reserved, please select other seat.')">7</div>
+        <div class="seat occupied" onClick="alert('Seat H8 is already reserved, please select other seat.')">8</div>
+        <div class="seat occupied" onClick="alert('Seat H9 is already reserved, please select other seat.')">9</div>
+      </div>
+      <div class="row">
+        <div class="kursi">I</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat occupied" onClick="alert('Seat I3 is already reserved, please select other seat.')">3</div>
+        <div class="seat occupied" onClick="alert('Seat I4 is already reserved, please select other seat.')">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
+        <div class="seat">9</div>
+      </div>
+      <div class="row">
+        <div class="kursi">J</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
+        <div class="seat">9</div>
+      </div>
+  </div>
+    <p class="text">
+      You have booked  <span id="count">0</span> seat with price of <span id="total">0</span> IDR (including administration)<br>
+      Please press submit if you want to reserve the selected seat<br>
+    </p>
+    <h2>
+    <input type="submit" class="btn btn-default" value="submit" onClick="alert('Thank you for your reservation!')">
+    </h2>
+    <script src="IndexJS.js"></script>
+    <footer>
+      <p>By: M. R. Reza Pahlevi<br>
+      NIM: A11.2021.13369<br>
+      Kelompok: 4107</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>|| Reservasi Tour Guide ||</title>
+        <link rel="stylesheet" href="sytlebukutamu.css">
+    </head>
+    <body>
+        <h1>Forulir Reservasi</h1>
+        <div class="container">
+            <form method="GET" action="tabel_tamu.php">
+            <h2>Nama:<br><input type="text" name="nama_lengkap" size="50"></h2>
+            <h2>Alamat:<br><input type="text" name="alamat" size="50"></h2>
+            <h2>No Aktif:<br><input type="text" name="No_Aktif" size="50"></h2>
+            <h2>Email:<br><input type="text" name="Email" size="50"></h2>
+            <h2>Foto KTP:<br><input type="file" class="btn btn-default" name="filename"></h2>
+            <h2>Pilih Medsos yang Paling Sering Digunakan<br><select name="Medsos">
+                    <option selected="select">-=Pilih=-</option>
+                    <option value="Whatsapp">Whatsapp</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Lain-Lain">Lain-lain</option>
+            </select></h2>
+                <h2>Silahkan pilih destinasi wisata<br></h2>
+                    <h3>
+                    <input type="checkbox" value="Tugu Muda"> Tugu Muda <br>
+                    <input type="checkbox" value="Lawang Sewu"> Lawang Sewu <br>
+                    <input type="checkbox" value="Klenteng Sam Poo Kong"> Klenteng Sam Poo Kong <br>
+                    <input type="checkbox" value="Kota Lama Semarang"> Kota Lama Semarang <br>
+                    <input type="checkbox" value="Kampung Pelangi"> Kampung Pelangi <br>
+                    <input type="checkbox" value="Kampung Batik Semarang"> Kampung Batik Semarang <br>
+                    <input type="checkbox" value="Pasar Semawis"> Pasar Semawis <br>
+                    <input type="checkbox" value="Pantai Marina"> Pantai Marina <br>
+                    <input type="checkbox" value="lainnya"> lainnya <br>
+                    </h3>
+            <h2>Tanggal reservasi <br><input type="date"></h2>
+            <h2>Note/Pesan:<br><input type="text" name="note" size="60"></h2>
+            <h2><input type="submit" class="btn btn-default" value="Send" onclick="alert('Terimakasih atas reservasi anda!')"></h2>
+            </form>
+        </div> 
+            <div class="container">
+                <div class="row min-vh-100 align-items-center">
+                    <div class="home-text">
+                    <a href="beranda.html" class="btn btn-default" onclick="alert('Anda akan dikembalikan ke halaman awal.')">Beranda</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <h2>Untuk Info Lebih Lanjut Bisa Menghubungi:</h2><br>
+        <h3>
+            # Reza: 08882415837<br>
+            # Email: Harukazeeza@gmail.com
+        </h3>
+    </footer>
+</html>
